@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<style>
+    .form-container{
+        border-radius: 2px;
+        width : 300px;
+        background-color: whitesmoke;
+        border : 1px darkgray;
+        margin : 30px auto;
+        padding: 20px;
+    }
+
+    h2{
+        text-align: center;
+
+    }
+    input{
+        border-radius: 3px;
+        margin: 5px auto;
+        width: 295px;
+    }
+    input[type="radio"],input[type="checkbox"]{
+        width: auto;
+    }
+
+    
+</style>
+
+
+
+
+</head>
+<body>
+    <h2> Student Registration Portal</h2>
+    <form class="form-container" action="/register" method="post">
+        <label for="fullName"><strong>Full Name: </strong></label>
+        
+        <br>
+        <input type="text" id="fullName" name="fullName" placeholder="Enter name...">
+        <br>
+        <label for="University email"> <strong>University Email:</strong> </label>
+        <br>
+        <input type="University email" id="University email" name="University email" placeholder=" Enter email...">
+        <br>
+        
+        <label for="Age"><strong> Age: </strong></label>
+        <input type="age" id="age" name="Age" >
+
+        <label for="date"><strong> Date: </strong> </label>
+        <br>
+        <input type="date">
+
+
+        <label name="gender"> <strong>Gender: </strong></label>
+        
+        <input type="radio" value="male" id="male">
+        <label for="male">Male</label>
+    
+        <input type="radio" value="female" id="female">
+        <label for="female">Female</label>
+        <br>
+
+        <label for="branch"> <strong> Branch: </strong></label>
+        <br>
+        <select name="branch" id="branch">
+        <option value="cse">CSE </option>
+        <option value="ec">EC </option>
+        <option value="it">IT </option>
+       </select>
+       <br>
+
+       <label> <strong> Select Skills: </strong> </label>
+       <br>
+       <input type="checkbox" id="java ">
+       <label for="java">java </label>
+
+       <input type="checkbox" id=" javascript">
+       <label for="javascript">javascript </label>
+       <br>
+       <button type="submit"> Submit</button>
+       <button type="reset"> Reset</button>
+
+
+
+
+
+    </form>
+    <br>
+
+    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d28282.8209758037!2d77.60445440000001!3d27.6135936!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1787220043316!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+    <br>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/OXGznpKZ_sA?si=9B7bzRURwc-N1xjk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+
+
+</body>
+</html>
