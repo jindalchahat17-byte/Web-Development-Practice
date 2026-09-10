@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Movie Cards</title>
+  <style>
+
+        *{
+            margin:0;
+            padding:0;
+            box-sizing: border-box;
+        }
+        body{
+            font-family: Arial,  sans-serif;
+            background-color: #eae5ff;
+            font-family: sans-serif;
+        }
+        .card-container{
+             display: grid;
+             grid-template-columns: 300px 300px ;
+           
+            flex-wrap: wrap;
+            column-gap: 30px;
+            row-gap: 30px;
+            padding: 40px;
+            background-color: rgb(238,253,253);
+            justify-content: center;
+         
+        }
+
+        .movie-card{
+            width: 200px;
+            border: 2px solid;
+            border-radius: 16px;
+            border-color: #00000014;
+            background-color: white;
+            overflow: hidden;
+            transition: all 1s;
+            animation: CardAnimation 0.5s ease-in forwards; ;
+            
+        }
+        .movie-card:hover{
+          transform: scale(1.1);
+
+        }
+        .movie-image img{
+            width: 100%;
+            height: auto;
+        }
+        .movie-image{
+            overflow: hidden;
+        }
+        .movie-info h5{
+            font-weight:600;
+            font:16px;
+        }
+        .movie-info{
+            padding: 12px;
+        }
+        .movie-card:nth-child(1){
+          animation-delay: 0.1s;
+        }
+        .movie-card:nth-child(2){
+          animation-delay: 0.2s;
+        }
+        .movie-card:nth-child(3){
+          animation-delay: 0.3s;
+        }
+        .movie-card:nth-child(4){
+          animation-delay: 0.4s;
+        }
+        @keyframes CardAnimation{
+          from{
+            opacity: 0;
+            transform: translateY(30px);
+          }
+          to {
+            opacity: 1; 
+            transform: translateY(0px);
+          }
+        }
+
+  </style>
+</head>
+<body>
+  <div class="card-container">
+    <div class="movie-card">
+      <div class="movie-image">
+        
+        <img src="https://cdn.district.in/movies-assets/images/cinema/Hanuman-Ansh-3199a900-6975-11f1-a51b-91d242246b61.jpg" alt="Hanuman Ansh">
+      </div>
+      <div class="movie-info">
+        <h5 class="movie-title">Hanuman Ansh</h5>
+        <span class="movie-rating"> U | Hindi</span>
+      </div>
+    </div>
+     <div class="movie-card">
+      <div class="movie-image">
+        <img src="https://cdn.district.in/movies-assets/images/cinema/toxiv%3Dc-8340c900-9c6f-11f1-97d4-73a32236137e.jpg" alt="Toxic">
+      </div>
+      <div class="movie-info">
+        <h5 class="movie-title">Toxic: A Fairy Tale for Grown-ups</h5>
+        <span class="movie-rating">A | Hindi + 1 more</span>
+      </div>
+    </div>
+    <div class="movie-card">
+      <div class="movie-image">
+        <img src="https://cdn.district.in/movies-assets/images/cinema/_Poster-d0d78f60-961a-11f1-8483-eb84b060bac3.jpg" alt="Mirzapur">
+      </div>
+      <div class="movie-info">
+        <h5 class="movie-title">Mirzapur: The Movie</h5>
+        <span class="movie-rating">A | Hindi</span>
+      </div>
+    </div>
+       <div class="movie-card">
+      <div class="movie-image">
+        <img src="https://cdn.district.in/movies-assets/images/cinema/AW_Poster-18591030-9548-11f1-b29d-8985d3d6c644.jpg" alt="Awarapan 2">
+      </div>
+      <div class="movie-info">
+        <h5 class="movie-title">Awarapan 2</h5>
+        <span class="movie-rating">UA16+ | Hindi</span>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
