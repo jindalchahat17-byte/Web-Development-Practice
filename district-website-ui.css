@@ -1,0 +1,205 @@
+* {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #eefdfd;
+        }
+
+        .navbar {
+            height: 80px;
+            background: white;
+            display: flex;
+            align-items: center;
+            padding: 0 30px;
+            gap: 25px;
+            border-bottom: 1px solid #ddd;
+        }
+
+       .logo {
+    width: 100px;
+}
+
+.logo img {
+    width: 100%;
+    height: auto;
+    filter: brightness(0);
+}
+
+        .logo h1 {
+            font-size: 25px;
+            color: #000000;
+        }
+
+        .logo span {
+            font-size: 8px;
+            color: #777;
+        }
+
+        .location {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            width: 150px;
+        }
+
+        .location strong {
+            display: block;
+            font-size: 14px;
+        }
+
+        .location small {
+            color: #777;
+        }
+
+        nav {
+            display: flex;
+            align-items: center;
+         
+            flex: 1;
+            gap: 8px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #555;
+            font-size: 16px;
+            padding: 10px 14px;
+            border-radius: 20px;
+        }
+
+        nav a:hover,
+        nav .active {
+            background: #eee9ff;
+        }
+
+        .booking {
+            background: #095f00;
+            color: white;
+            padding: 14px 18px;
+            border-radius: 6px;
+            font-size: 13px;
+            white-space: nowrap;
+        }
+
+        .card-container {
+            display: grid;
+            grid-template-columns: repeat(3, 200px);
+            gap: 30px;
+            padding: 40px;
+            justify-content: center;
+        }
+
+        .movie-card {
+            width: 200px;
+            border: 2px solid #00000014;
+            border-radius: 16px;
+            background: white;
+            overflow: hidden;
+            transition: transform 0.4s ease;
+            animation: CardAnimation 0.5s ease-in forwards;
+        }
+
+        .movie-card:hover {
+            transform: scale(1.05);
+        }
+
+        .movie-image {
+            height: 280px;
+            overflow: hidden;
+        }
+
+        .movie-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .movie-info {
+            padding: 12px;
+        }
+
+        .movie-info h5 {
+            font-size: 16px;
+            margin-bottom: 8px;
+        }
+
+        .movie-info span {
+            font-size: 13px;
+            color: #666;
+        }
+
+        .movie-info button {
+            margin-top: 12px;
+            padding: 8px 14px;
+            border: none;
+            border-radius: 5px;
+            background: #777;
+            color: white;
+            cursor: pointer;
+        }
+
+        .movie-info button:hover {
+            background: #555;
+        }
+
+        .movie-card:nth-child(1) {
+            animation-delay: 0.1s;
+        }
+
+        .movie-card:nth-child(2) {
+            animation-delay: 0.2s;
+        }
+
+        .movie-card:nth-child(3) {
+            animation-delay: 0.3s;
+        }
+
+        .movie-card:nth-child(4) {
+            animation-delay: 0.4s;
+        }
+
+        @keyframes CardAnimation {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @media (max-width: 900px) {
+            .booking {
+                display: none;
+            }
+
+            .card-container {
+                grid-template-columns: repeat(2, 200px);
+            }
+        }
+
+        @media (max-width: 650px) {
+            .navbar {
+                height: auto;
+                flex-wrap: wrap;
+                padding: 15px;
+            }
+
+            .nav-links {
+               display: none;
+            }
+            .location {
+                display: none;
+            }
+
+            .card-container {
+                grid-template-columns: 200px;
+            }
+        }
+    
