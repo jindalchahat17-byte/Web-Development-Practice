@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2 id ="title">Welcome to the learning DOM !!!</h2>
+    <button id ="change-btn">Change heading </button>
+
+    <h2> List of 3CB Ojas friends </h2>
+    <button> Add friends</button>
+    <ul id ="add-friend"></ul>
+
+    <script>
+        const heading = document.getElementById('title')
+        heading.innerText = 'heading is changed'
+        document.querySelector('#title')
+        const headingChangeButton = document.getElementById('change-btn')
+
+        headingChangeButton.addEventListener('click', function(){
+            heading.innerText= 'heading is changed'
+            heading.style.color='pink'
+
+
+        })
+
+        const mydiv = document.createElement('meraDiv')
+        document.body.appendChild(mydiv)
+
+        console.log(document)
+
+        const li= document.createElement("li")
+
+
+
+    </script>
+
+
+</body>
+</html>
